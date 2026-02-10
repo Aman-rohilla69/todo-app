@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Navigate, Route, Routes } from "react-router-dom";
-import PageNotFound from "./components/PageNotFound.jsx";
+import NotFound.jsx from "./Components/NotFound.jsx";
 import { Toaster } from "react-hot-toast";
 import Home from "./Components/Home.jsx";
 import Login from "./Components/Login.jsx";
@@ -17,7 +17,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<NotFound.jsx />} />
       </Routes>
       <Toaster />
     </div>
